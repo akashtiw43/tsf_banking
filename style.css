@@ -1,0 +1,249 @@
+/*            GLOBAL STYLING          */
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body,html{
+    overflow-x: hidden;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+/*      xxxxx      GLOBAL STYLING     xxxxxx     */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Oswald:wght@200&display=swap');
+
+
+
+
+/*            fonts and colors           */
+.anton{
+    font-family: 'Anton', sans-serif;
+}
+.abril{
+    font-family: 'Abril Fatface', cursive;
+}
+.bebas{
+    font-family: 'Bebas Neue', cursive;
+}
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo{
+    background-position: center;
+}
+.midnight{
+    color: midnightblue;
+}
+.pri{
+    color: rgba(248, 116, 8, 0.932);
+}
+.pri-bg{
+    background-color: rgba(248, 116, 8, 0.932);
+}
+.mid-bg{
+    background-color: midnightblue;
+}
+.top-nav{
+    -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 94%, 5% 94%, 0 0, 25% 0%);
+    clip-path: polygon(100% 0%, 100% 50%, 100% 94%, 5% 94%, 0 0, 25% 0%);
+}
+.icon{
+    font-size: 1.2rem;
+}
+hr{
+    opacity: 0.1;
+}
+.btn-log:hover{
+    background-color: white;
+    border: 2px solid midnightblue;
+    color: midnightblue !important;
+    transition: .4s;
+}
+.effect::after{
+    display: block;
+    content: '';
+    background: white;
+    width: 0;
+    height: 2px;
+    transition: width .4s;
+}
+.effect:hover::after{
+    width: 100%;
+}
+.effect:hover{
+    color: midnightblue;
+}
+.effect-2::after{
+    display: block;
+    content: '';
+    background: rgba(248, 116, 8, 0.932);
+    width: 0;
+    height: 2px;
+    transition: width .4s;
+}
+.effect-2:hover::after{
+    width: 100%;
+}
+.effect-2:hover{
+    color: rgba(248, 116, 8, 0.932);
+}
+.logo:hover , .bank-opt-img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.carousel{
+    height: 55vh;
+}
+.carousel-img{
+    margin-left: 20%;
+}
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-24{
+    font-size: 24px;
+}
+.h-25{
+    height: 25%;
+}
+
+
+/*       xxxxx     fonts and colors      xxxxxx   */
+
+
+.bank-options{
+    box-shadow: 10px 0px 17px 0px rgba(238,140,110,0.75);
+    -webkit-box-shadow: 10px 0px 17px 0px rgba(238,140,110,0.75);
+    -moz-box-shadow: 10px 0px 17px 0px rgba(238,140,110,0.75);
+    cursor: pointer;
+}
+.transfer{
+    box-shadow: 10px 0px 11px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 0px 11px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 0px 11px -3px rgba(0,0,0,0.75);
+}
+.cover{
+    width: 100%;
+    height: 30vmin;
+    background-image: url(./img/bank1.PNG);
+    position: relative;
+}
+.cover-content{
+    background-color: rgba(2, 2, 29, 0.842);
+    height: 100%;
+    padding-top: 8vh;
+    color: whitesmoke;
+}
+.rect{
+    box-shadow: 10px 0px 11px 0px rgba(223, 69, 22, 0.75);
+    -webkit-box-shadow: 10px 0px 17px 0px rgba(223, 74, 29, 0.75);
+    -moz-box-shadow: 10px 0px 11px 0px rgba(223, 67, 20, 0.75);
+    margin: 0px 30px;
+    padding: 1.5rem 2.5rem;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+.numbers{
+    margin-top: -10vmin;
+}
+.submit-btn{
+    margin-left: -60px;
+    position: relative;
+    z-index: 10;
+}
+.newsletter{
+   outline: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:rgb(248, 116, 8);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover{
+    filter: brightness(90%);
+  }
+  .counter{
+      font-size: 34px;
+  }
+
+  .sub-heading::before{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    margin-right: 15px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: midnightblue;
+    transform: translateY(-8px);
+  }
+  .sub-heading::after{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    margin-left: 15px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: midnightblue;
+    transform: translateY(-8px);
+  }
+  .hide{
+      display: none;
+  }
+  #bars , #cancel{
+      font-size: 30px;
+      line-height: 80px;
+      color: white;
+      cursor: pointer;
+      display: none;
+  }
+  #check{
+      display: none;
+  }
+  .nav-label{
+      float: right;
+      margin-right: 30px;
+  }
+  .show{
+      display: block !important;
+  }
